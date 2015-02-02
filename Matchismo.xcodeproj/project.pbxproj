@@ -15,6 +15,7 @@
 		3B4519161A7D33D600C71F80 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B4519141A7D33D600C71F80 /* LaunchScreen.xib */; };
 		3B4519221A7D33D600C71F80 /* MatchismoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4519211A7D33D600C71F80 /* MatchismoTests.m */; };
 		3BDAED101A7FE72A00614703 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDAED0F1A7FE72A00614703 /* Card.m */; };
+		3BDAED141A7FED5D00614703 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDAED131A7FED5D00614703 /* Deck.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		3B4519211A7D33D600C71F80 /* MatchismoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatchismoTests.m; sourceTree = "<group>"; };
 		3BDAED0E1A7FE72A00614703 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = Model/Card.h; sourceTree = "<group>"; };
 		3BDAED0F1A7FE72A00614703 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = Model/Card.m; sourceTree = "<group>"; };
+		3BDAED121A7FED5D00614703 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Deck.h; path = Model/Deck.h; sourceTree = "<group>"; };
+		3BDAED131A7FED5D00614703 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Deck.m; path = Model/Deck.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				3BDAED0E1A7FE72A00614703 /* Card.h */,
+				3BDAED121A7FED5D00614703 /* Deck.h */,
+				3BDAED131A7FED5D00614703 /* Deck.m */,
 				3BDAED0F1A7FE72A00614703 /* Card.m */,
 			);
 			name = Model;
@@ -232,6 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BDAED141A7FED5D00614703 /* Deck.m in Sources */,
 				3B45190E1A7D33D600C71F80 /* ViewController.m in Sources */,
 				3B45190B1A7D33D600C71F80 /* AppDelegate.m in Sources */,
 				3B4519081A7D33D600C71F80 /* main.m in Sources */,
