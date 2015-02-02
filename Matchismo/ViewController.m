@@ -15,6 +15,9 @@
 @implementation ViewController
 
 - (IBAction)touchCardButton:(UIButton *)sender {
+    [sender setBackgroundImage:[UIImage imageNamed:@"cardback"]
+                      forState:UIControlStateNormal];
+    [sender setTitle:@"" forState:UIControlStateNormal];
 }
 
 @end
