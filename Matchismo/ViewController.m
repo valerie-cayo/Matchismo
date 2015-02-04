@@ -37,7 +37,9 @@
     } else {
         [sender setBackgroundImage:[UIImage imageNamed:@"cardfront"]
                           forState:UIControlStateNormal];
-        [sender setTitle:@"A♣︎" forState:UIControlStateNormal];
+        Card *aRandomCard = [self.deckOfPlayingCards drawRandom];
+        [sender setTitle:[aRandomCard contents] forState:UIControlStateNormal];
+        [self.deckOfPlayingCards addCard:aRandomCard atTop:YES];
     }
     
     self.flipCount++;
