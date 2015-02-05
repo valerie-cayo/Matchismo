@@ -29,10 +29,12 @@
     }
     
 }
+
 -(void)addCard:(Card *)card{
     [self addCard:card atTop:NO];
 }
--(Card *)drawRandom {
+
+-(Card *)drawRandomCard {
     Card *randomCard = nil;
     
     if ([self.cards count]){

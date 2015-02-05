@@ -37,7 +37,7 @@
     } else {
         [sender setBackgroundImage:[UIImage imageNamed:@"cardfront"]
                           forState:UIControlStateNormal];
-        Card *aRandomCard = [self.deckOfPlayingCards drawRandom];
+        Card *aRandomCard = [self.deckOfPlayingCards drawRandomCard];
         [sender setTitle:[aRandomCard contents] forState:UIControlStateNormal];
         [self.deckOfPlayingCards addCard:aRandomCard atTop:YES];
     }
