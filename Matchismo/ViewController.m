@@ -21,11 +21,20 @@
 
 @implementation ViewController
 
+- (IBAction)dealButton:(id)sender {
+    [self createGame];
+    //set score equal to 0
+}
+
 -(CardMatchingGame *)game{
     if (!_game) {
-        _game = [[CardMatchingGame alloc]initWithCardCount:[self.cardButtons count] usingDeck:[self createDeck]];
+        _game = [self createGame];
     }
     return _game;
+}
+
+-(CardMatchingGame *)createGame{
+    return [[CardMatchingGame alloc]initWithCardCount:[self.cardButtons count] usingDeck:[self createDeck]];
 }
 
 -(Deck *)createDeck{
